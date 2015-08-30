@@ -1,0 +1,3 @@
+[submodule "eaglelist-designs"]
+	path = eaglelist-designs
+	url = git@github.com:5-Bit/eaglelist-designs.git
