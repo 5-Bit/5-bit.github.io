@@ -5,7 +5,12 @@ layout: default
   <div class="container">
     <header class="major">
       <h2>{{ page.title }}</h2>
-      <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+      <p class="post-meta" style="font-size: 1.1em;">
+        {% if page.author and page.date %}
+        <span>by {{ page.author }}</span>
+        <span>on {{ page.date | date: '%B %d, %Y' }}</span>
+        {% endif %}
+    </p>
     </header>
 
     <section class="post-content">
