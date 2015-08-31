@@ -1,0 +1,25 @@
+---
+layout: default
+title: "Journal Archive"
+---
+
+<section id="one">
+  <div class="container">
+    <header class="major">
+      <h2>{{ page.title }}</h2>
+    </header>
+
+    <ul>
+      {% for post in site.posts %}
+        <li>
+          <a href="{{ post.url }}" class="float-left">
+            {{ post.title }}
+          </a>
+          <span class="float-right">
+            {{ post.date | date: '%B %d, %Y' }}
+          </span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
