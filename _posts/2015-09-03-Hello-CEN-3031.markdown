@@ -1,0 +1,28 @@
+---
+layout: post
+title: "Hello, CEN 3031"
+author: "Michael MacCallum"
+---
+
+
+##### Team Name
+5Bit Studios
+
+##### Team Members
+
+- Mostofa Ansary
+- Hermilo Calderon
+- Michael MacCallum
+- Andrew Owen
+- John Zachariah
+
+##### Team Leader (benevolent dictator)
+Andrew Owen
+
+##### URL (this one)
+
+[https://5-bit.github.io](https://5-bit.github.io)
+
+##### Topic
+
+Eagleslist is a textbook focused trading program for FGCU students that will allow users to make accounts, verify their student email addresses and post used textbooks and other goods that they’re looking to buy or sell. We plan on adding special features for textbooks, like the ability to lookup books by CRN, or ISBN. Professors will also be able to verify their faculty email addresses and have the ability to supply the ISBNs for books that they will require for specific classes. Students will be allowed to comment and/or review course books to rate them by relevance/necessity/etc. We will not be handling money, all transactions will be determined by the students who buy and sell products on our service.
