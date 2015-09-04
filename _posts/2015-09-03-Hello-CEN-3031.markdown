@@ -2,6 +2,7 @@
 layout: post
 title: "Hello, CEN 3031"
 author: "Michael MacCallum"
+date: 2015-09-03 14:30:00
 ---
 
 
