@@ -16,6 +16,6 @@ permalink: "/about.html"
 - Liquid
 - GitHub Pages
 
-#### {{ site.title }}
+#### {{ site.project.title }}
 - C#
 - .Net
