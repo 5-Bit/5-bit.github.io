@@ -14,7 +14,11 @@ title: "Jornal"
                     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
                 </header>
                 <section class="post-content">
-                    {{ post.excerpt }}
+                    {% if post.excerpt %}
+                      {{ post.excerpt }}
+                    {% else %}
+                      {{ post.content | truncatewords: 30 }}
+                    {% endif %}
                 </section>
                 <section class="special">
                     <ul class="actions">
@@ -41,8 +45,11 @@ title: "Jornal"
                   <a href="{{ post.url }}">{{ post.title }}</a>
                 </h3>
               </header>
-
-              {{ post.content | truncatewords: 30 }}
+              {% if post.excerpt %}
+                {{ post.excerpt }}
+              {% else %}
+                {{ post.content | truncatewords: 30 }}
+              {% endif %}
             </section>
 
             <footer>
