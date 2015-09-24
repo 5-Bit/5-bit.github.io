@@ -45,8 +45,11 @@ title: "Home"
                 <a href="{{ post.url }}">{{ post.title }}</a>
               </h3>
             </header>
-
-            {{ post.content | truncatewords: 30 }}
+            {% if post.excerpt %}
+              {{ post.excerpt }}
+            {% else %}
+              {{ post.content | truncatewords: 30 }}
+            {% endif %}
           </section>
           <footer>
             <ul class="actions">
