@@ -759,6 +759,7 @@
     height: 2.75em;
     line-height: 2.75em;
     padding: 0 1.5em;
+    margin: 1em 0;
     text-align: center;
     text-decoration: none;
     white-space: nowrap;
@@ -923,10 +924,6 @@
         border-radius: 5px;
         width: 45%;
         margin: 0 5% 2em 0;
-    }
-
-    .excerpt {
-        padding-bottom: 1em;
     }
 
     .excerpt p {
