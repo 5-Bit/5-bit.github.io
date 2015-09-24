@@ -925,6 +925,10 @@
         margin: 0 5% 2em 0;
     }
 
+    .excerpt {
+        padding-bottom: 1em;
+    }
+
     .excerpt p {
         margin-bottom: 1.1em;
     }
