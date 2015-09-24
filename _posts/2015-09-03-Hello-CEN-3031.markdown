@@ -3,6 +3,7 @@ layout: post
 title: "Hello, CEN 3031"
 author: "Michael MacCallum"
 date: 2015-09-03 14:30:00
+excerpt: "Eagleslist is a textbook focused trading program for FGCU students that will allow users to make accounts, verify their student email addresses and post used textbooks and other goods that they’re looking to buy or sell. We plan on adding special features for textbooks, like the ability to lookup books by CRN, or ISBN."
 ---
 
 
