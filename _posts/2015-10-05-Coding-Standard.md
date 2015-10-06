@@ -3,6 +3,7 @@ layout: post
 title: "Coding Standards"
 author: "Michael MacCallum"
 date: 2015-10-05 19:09:00
+excerpt: "This document outlines the coding standards that we will follow while working on {{ site.project.title }}. It includes some info on things like, how we will be testing our code, code organization and conventions, code reviews and other policies that we will attempt to follow."
 ---
 This document outlines the coding standards that we will follow while working on {{ site.project.title }}. It includes some info on things like, how we will be testing our code, code organization and conventions, code reviews and other policies that we will attempt to follow.
 
