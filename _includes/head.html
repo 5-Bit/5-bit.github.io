@@ -10,7 +10,9 @@
     <meta name="description" content="{{ site.subtitle | truncate: 155, '...' }}" />
     {% endif %}
     {% if page.author %}
-    <meta name="author" content="{{ author | markdownify}}">
+    <meta name="author" content="{{ page.author }}">
+    {% else %}
+    <meta name="author" content="{{ site.owners | map: "name" | array_to_sentence_string }}">
     {% endif %}
     <meta name="robots" content="index, follow">
     <meta name="copyright" content="5Bit">
