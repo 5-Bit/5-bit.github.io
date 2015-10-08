@@ -3,9 +3,11 @@
     <title>{{ site.project.title }} - {{ page.title }}</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     {% if page.excerpt %}
-    <meta name="description" content="{{ excerpt | markdownify | truncate: 155, '...' }}" />
+    <meta name="description" content="{{ page.excerpt | truncate: 155, '...' }}" />
+    {% else if page.body %}
+    <meta name="description" content="{{ page.body | truncate: 155, '...' }}" />
     {% else %}
-    <meta name="description" content="{{ body | markdownify | truncate: 155, '...' }}" />
+    <meta name="description" content="{{ site.subtitle | truncate: 155, '...' }}" />
     {% endif %}
     {% if page.author %}
     <meta name="author" content="{{ author | markdownify}}">
