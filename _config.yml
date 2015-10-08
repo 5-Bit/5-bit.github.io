@@ -29,4 +29,6 @@ twitter_username:
 github_username:  "5-bit"
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
