@@ -30,36 +30,44 @@ title: "Home"
   </section> -->
 
 <!-- Three -->
-  <section id="three">
+<section id="three">
     <div class="container">
-      <h3>Recent Journal Entries</h3>
-      <p>
-        In accordance with our project requirements, we will be keeping a journal of of progress building {{ site.project.title }}. Our most recent entries are listed below, and all of our entries can be found in the <a href="archive.html">journal archive</a>.
-      </p>
+        <div class="features">
+            <h3>Recent Journal Entries</h3>
+            <p>
+                In accordance with our project requirements, we will be keeping a journal of of progress building {{ site.project.title }}. Our most recent entries are listed below, and all of our entries can be found in the <a href="archive.html">journal archive</a>.
+            </p>
 
-      {% for post in site.posts limit:3 %}
-        <article>
-          <section class="excerpt">
-            <header>
-              <h3>
-                <a href="{{ post.url }}">{{ post.title }}</a>
-              </h3>
-            </header>
-            {% if post.excerpt %}
-              {{ post.excerpt }}
-            {% else %}
-              {{ post.content | truncatewords: 30 }}
-            {% endif %}
-          </section>
-          <footer>
-            <ul class="actions">
-              <li>
-                <a href="{{ post.url }}" class="button">Read More</a>
-              </li>
-            </ul>
-          </footer>
-          <div class="clear"></div>
-        </article>
-      {% endfor %}
+            {% for post in site.posts limit:3 %}
+            <article>
+                <section class="excerpt">
+                    <header>
+                        <h3>
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                        </h3>
+                    </header>
+                    {% if post.excerpt %}
+                        {{ post.excerpt }}
+                    {% else %}
+                        {{ post.content | truncatewords: 30 }}
+                    {% endif %}
+                </section>
+
+                <footer>
+                    <ul class="actions">
+                        <li>
+                            <a href="{{ post.url }}" class="button">Read More</a>
+                        </li>
+                    </ul>
+                </footer>
+
+                <div class="clear"></div>
+            </article>
+            {% endfor %}
+        </div>
+
+        <span style="text-align:right;display: inline-block;width:100%;">
+            <a href="/archive.html" style="align:right;">View All Journal Entries</a>
+        </span>
     </div>
-  </section>
+</section>
