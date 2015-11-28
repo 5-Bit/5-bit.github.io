@@ -1,3 +1,6 @@
 [submodule "eagleslist-designs"]
   path = eagleslist-designs
   url = https://github.com/5-Bit/eagleslist-designs.git
+[submodule "final-deliverable"]
+	path = final-deliverable
+	url = https://github.com/5-Bit/final-deliverable.git
